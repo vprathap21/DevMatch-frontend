@@ -29,9 +29,8 @@ const NavBar = () => {
   return (
     <div className="navbar bg-base-100 border-b-2 border-neutral">
       <div className="flex-1">
-        <Link to={"/"}>
-          {" "}
-          <a className="text-xl">DevMatch</a>
+        <Link to={"/"} className="text-xl">
+          DevMatch
         </Link>
       </div>
       <div className="flex-none gap-2">
@@ -57,12 +56,7 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to={"/profile"}>
-                <a className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </a>
-              </Link>
+              <Link to={"/profile"}>Profile</Link>
             </li>
             <li>
               <a>Settings</a>
